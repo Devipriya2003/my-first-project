@@ -63,7 +63,7 @@ if __name__=="__main__":
      result=predict(bed,bath,loc,size,status,facing,Type)
      submit_button=st.button("Submit")
      if submit_button:
-         larger_text=f"<h2 style='color:blue:'> The Predicted House Price is:{result}Lakhs</h2>"
+         larger_text=f"<h2 style='color:blue:'> The Predicted House Price is:{round(result)}Lakhs</h2>"
          st.markdown(larger_text,unsafe_allow_html=True)             
                       
                       
